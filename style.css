@@ -1,0 +1,321 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tilt+Warp&display=swap');
+
+:root {
+    --cor1: #FFFAFB;
+    --cor2: #7DE2D1;
+    --cor3: #339989;
+    --cor4: #2B2C28;
+    --cor5: #131515;
+    
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-padrao: 'Tilt Warp', cursive;
+}
+
+
+
+body {
+    background-color: var(--cor5);
+    margin: 0px;
+    font-family: var(--fonte-padrao)
+}
+
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor2));
+    min-height: 150px;
+    padding-top: 30px;
+}
+
+header > h1 > a:hover {
+    color: var(--cor1);
+    transition: 0.5s;
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.144);
+    margin-bottom: 20px;
+}
+
+header p {
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    font-size: 1.2em;
+}
+
+header > a:hover {
+    color: var(--cor1);
+    background-color: var(--cor4);
+    padding: 8px;
+    border-radius: 2px;
+}
+
+nav {
+    background-color: var(--cor2);
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+nav > a {
+    margin: 10px;
+    color: var(--cor5);
+    font-size: 1em;
+    padding: 10px;
+    transition: 0.5s;
+    
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: var(--cor1);
+    background-color: var(--cor5);
+}
+
+a {
+    text-decoration: none;
+    color: #131515;
+}
+
+main {
+    background-color: #FFFAFB;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px 0px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin-bottom: 30px;
+    
+}
+
+main p {
+   text-decoration: none;
+   color: var(--cor5);
+   text-justify: center;
+   text-align: justify;
+   text-indent: 30px;
+   line-height: 2em;
+}
+
+
+main h2 {
+    background-image: linear-gradient(to right, var(--cor2), var(--cor1));
+    color: var(--cor4);
+    padding: 5px;
+    margin: 0px -10px 30px;
+    text-indent: 10px;
+    font-family: var(--fonte-padrao);
+}
+
+.click {
+    text-align: center;
+    padding: 5px;
+}
+
+.click h3 {
+    background-image: linear-gradient(to right, var(--cor2), var(--cor1));
+    padding: 5px;
+}
+
+.click > button {
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.click > button:hover {
+    cursor: pointer;
+    color: var(--cor1);
+    background-color: var(--cor5);
+}
+
+article > button {
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+article > button:hover {
+    cursor: pointer;
+    color: var(--cor1);
+    background-color: var(--cor5);
+}
+
+div.video {
+    background-color: #339989;
+    margin: 0px -10px 30px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+    max-width: 1000px;
+    min-width: 300px;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.imc {
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #131515;
+    border-radius: 0px 5px;
+    max-width: 500px;
+    
+    
+    
+}
+
+.pi {
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #131515;
+    border-radius: 5px 0px;
+    max-width: 500px;   
+}
+
+  .cimc {
+  background-color: #7DE2D1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 0px 3px;
+  align-content: center;
+  text-align: center;
+  
+}
+
+.detalhes :hover {
+  
+    cursor: pointer;
+  
+  }
+  
+  .detalhes {
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    text-justify: center;
+    
+  }
+  
+  
+  details {
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+    background-color: #339989;
+    border-radius: 5px;
+    
+  }
+
+  .container {
+  
+    background-color: #7DE2D1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 0px 3px;
+    text-align: center;
+}
+
+  input, button {
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 0px 3px;
+    caret-color: var(--cor4);
+    background-color: #339989;
+    font-family: var(--fonte-destaque);
+    
+}
+
+
+#resultado, #resultadoCPorcao, #resultadoIC, #resultado1, #resultadoPI {
+    text-align: center;
+    color: #E0FFFF;
+    padding-top: 15px;
+    font-style: bold;
+}
+
+.botao:hover {
+    background-color: #7DE2D1;
+    transition: 1s;
+    cursor: pointer;
+    }
+    
+    .caixa:hover {
+    background-color: #E0FFFF;
+    transition: 1s;
+    }
+    
+    .detalhes :hover {
+      
+      cursor: pointer;
+    
+    }
+
+    aside {
+        background-color: #FFFAFB;
+        padding: 5px;
+    }
+    
+    aside > a {
+        color: #131515;
+        text-decoration: none;
+        margin: 10px;
+        padding: 5px;
+    }
+    
+    aside > a:hover {
+        background-color: var(--cor3);
+        transition: 0.5s;
+        color: var(--cor1);
+    }
+
+    footer {
+        background-color: #131515;
+        margin: 0%;
+        text-align: center;
+        padding: 2px;
+        
+    }
+    
+    footer > p {
+        color: #FFFAFB;
+        text-decoration: solid;
+        text-align: center;
+    }
+
+    footer > a {
+        color: var(--cor1);
+        transition: 0.5s;
+    }
+
+    footer > a:hover {
+        text-decoration: underline;
+        color: var(--cor2);
+    }
+
+    footer > p > a {
+        color: var(--cor1);
+        transition: 0.5s;
+    }
+
+    footer > p > a:hover {
+        color: var(--cor3);
+    }

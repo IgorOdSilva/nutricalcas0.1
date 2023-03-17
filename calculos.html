@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculos Nutricionais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header><h1>
+        <a href="index.html" target="_self">Nutri Calcs</a></h1>
+        <p><strong>O site que ajuda você e a sua saúde</strong></p>
+    </header>
+            
+    <nav>
+        <a href="#">Cálculos Nutricionais</a>
+        <a href="ficha.html">Cálculos de Ficha Técnica</a>
+        <a href="#">Doenças</a>
+        <a href="#">Produtos</a>
+    </nav>
+        
+        
+    
+        <main>
+            <section>
+                <p>Bem-vindo ao Nutri Calcs! Aqui, oferecemos uma ferramenta de cálculos nutricionais gratuita para ajudá-lo a alcançar suas metas de saúde e bem-estar. Com base nas suas informações pessoais, como idade, peso, altura e nível de atividade física, nossa ferramenta irá calcular suas necessidades diárias de calorias e macronutrientes. Além disso, fornecemos conselhos nutricionais personalizados e informações sobre alimentos saudáveis para ajudá-lo a tomar decisões alimentares informadas. Comece sua jornada de nutrição hoje mesmo, faça seu cálculo nutricional gratuitamente agora!</p>
+            </section>
+
+            <section class="imc">
+            
+                <h2 class="cimc">Cálculadora de IMC</h2>
+                <details class="detalhes">
+                    <summary><strong>O que é IMC?</strong></summary>
+                    <p><strong>IMC</strong> é a sigla para <strong>Índice de Massa Corporal</strong>, que é uma medida de avaliação do peso corporal em relação à altura. É calculado dividindo o peso em quilogramas pela altura em metros ao quadrado. O resultado obtido é interpretado como uma indicação da condição nutricional de uma pessoa. É importante lembrar que o <strong>IMC</strong> não leva em conta a distribuição de gordura corporal e não é um indicador preciso da saúde em todos os casos. A avaliação da saúde deve ser feita por um profissional de saúde qualificado.</p> 
+                    <br>
+                </details>
+                <br>   
+                <div class="container">
+                  <label for="altura">Altura:(m)</label>
+                  <input class="caixa" type="number" id="altura"/>
+                </div>
+                <br>
+                <div class="container">
+                  <label for="peso">Peso:(kg)</label>
+                  <input class="caixa" type="number" id="peso"/>
+                </div>
+                <br>
+                <div class="container">
+                  <button class="botao" onclick="calcIMC()">Calcular</button>
+                </div>
+                <span id="resultado"></span>
+                <script src="imc.js"></script>
+            </section>
+                <br> <br>
+                
+            <section class="pi">
+
+                <h2 class="container">Cálculadora de Peso Ideal</h2>
+                <div class="container">
+                    <label for="height">Altura:(m)</label>
+                    <input class="caixa" type="number" id="height" />
+                </div>
+                <br>
+                <div class="container">
+                    <label for="weight">Peso:(kg)</label>
+                    <input class="caixa" type="number" id="weight" />
+                </div>
+                <br>
+                <div class="container">
+                    <button class="botao" onclick="calcPI()">Calcular</button>
+                </div>
+                <span id="resultadoPI"></span>
+                <script src="pi.js"></script>
+            </section>
+            
+        </main>
+    
+        <footer>
+            <p>Redes Sociais e Contatos</p>
+            <aside>
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="#">Youtube</a>
+                <a href="#">E-mail para Contato</a>
+            </aside>
+            <p>Desenvolvido por <strong>Igor Oliveira</strong></p>
+        </footer>
+    
+</body>
+</html>

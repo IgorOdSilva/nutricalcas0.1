@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculos de Ficha Técnica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Nutri Calcs</a></h1>
+    </header>
+
+        <nav>
+            <a href="calculos.html" target="_self">Cálculos Nutricionais</a>
+            <a href="ficha.html">Cálculos de Ficha Técnica</a>
+            <a href="#">Doenças</a>
+            <a href="#">Produtos</a>
+        </nav>
+    
+
+    <main>
+        <section>
+            <p>Aqui você pode fazer todos os Cálculos necessarios para completar sua Ficha Técnica, caso tenha alguma dificuldade assista o vídeo abaixo.</p>
+        </section>
+
+        <section class="imc">
+            <h2 class="cimc">Índice de Parte Comestível(IPC)</h2>
+                <details class="detalhes">
+                    <summary><strong>O que é?</strong></summary>
+                    <p>O Índice de Parte Comestível (IPC) é uma medida que representa a proporção da massa total de um alimento que é considerada comestível e nutritiva. É usado para avaliar a qualidade nutricional de diferentes alimentos e para comparações entre eles. Alimentos com IPC mais elevado são considerados mais nutritivos e de melhor qualidade.</p>
+                </details>
+                <br>
+                <div class="container">
+                    <label for="pb">Peso Bruto(g)</label>
+                    <input class="caixa" type="number" id="pb">
+                </div>
+                <br>
+                <div class="container">
+                    <label for="pl">Peso Líquido(g)</label>
+                    <input class="caixa" type="number" id="pl">
+                </div>
+                <br>
+                <div class="container">
+                    <button class="botao" onclick="calcIPC()">Calcular</button>
+                </div>
+            
+            <span id="resultado"></span>
+            <script src="calculos.js"></script>
+        </section>
+        <br><br>
+            
+            
+            <section class="pi">
+                <h2 class="cimc">Per Capita</h2>
+                <details class="detalhes">
+                    <summary><strong>O que é?</strong></summary>
+                    <p>Quantidade de tal alimento por porção.</p>
+                </details>
+                <br>
+                <div class="container">
+                    <label for="qtUltilizada">Quantidade Ultilizada(g)</label>
+                    <input class="caixa" type="number" id="qtUltilizada">
+                </div>
+                <br>
+                <div class="container">
+                    <label for="nPorcoes">Número de Porções</label>
+                    <input class="caixa" type="number" id="nPorcoes">
+                </div>
+                <br>
+                <div class="container">
+                    <button class="botao" onclick="divPerCapita()">Calcular</button>
+                </div>
+                <span id="resultado1"></span>
+                <script src="calculopc.js"></script>
+            </section>
+            <br><br>
+            
+            
+            <section class="imc">
+                <h2 class="cimc">Índice de Cocção(IC)</h2>
+                <details class="detalhes">
+                <br>
+                    <summary><strong>O que é?</strong></summary>
+                    <p>Índice de cocção trata da relação entre o peso dos alimentos cozidos e prontos (PC) e o peso dos alimentos limpos e crus (PL).</p>
+                </details>
+                <br>
+                <div class="container">
+                    <label for="pCozido">Peso Alimento Cozido(g)</label>
+                    <input class="caixa" type="number" id="pCozido">
+                </div>
+                <br>
+                <div class="container">
+                    <label for="pLiquido">Peso Líquido(g)</label>
+                    <input class="caixa" type="number" id="pLiquido">
+                </div>
+                <br>
+                <div class="container">
+                    <button class="botao" onclick="calcIC()">Calcular</button>
+                </div>
+                <br>
+                <span id="resultadoIC"></span>
+                <script src="calculoIC.js"></script>
+            </section>
+            <br><br>
+            
+            
+            <section class="pi">
+                <h2 class="cimc">Custo por Porção</h2>
+                <details class="detalhes">
+                    <summary><strong>O que é?</strong></summary>
+                    <p>Trata-se do valor gasto por cada porção feita.</p>
+                </details>
+                <br>
+                <div class="container">
+                    <label for="cTotal">Custo Total(R$)</label>
+                    <input class="caixa" type="number" id="cTotal">
+                </div>
+                <br>
+                <div class="container">
+                    <label for="nPessoas">Número de Porções</label>
+                    <input class="caixa" type="number" id="nPessoas">
+                </div>
+                <br>
+                <div class="container">
+                    <button class="botao" onclick="calcCPorcao()">Calcular</button>
+                </div>
+                <span id="resultadoCPorcao"></span>
+                <script src="calculoCPorcao.js"></script>
+            </section>
+    </main>
+
+    <footer>
+        <p>Redes Sociais e Contatos</p>
+        <aside>
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
+            <a href="#">Youtube</a>
+            <a href="#">E-mail para Contato</a>
+        </aside>
+        <p>Desenvolvido por <strong>Igor Oliveira</strong></p>
+    </footer>
+    
+</body>
+</html>
