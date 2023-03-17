@@ -55,23 +55,38 @@ header > a:hover {
     border-radius: 2px;
 }
 
-nav {
+span#burguer {
+    background-color: var(--cor2);
+    text-align: center;
+    display: block;
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+span#burguer:hover {
+    color: var(--cor1);
+    background-color: var(--cor5);
+}
+
+nav#itens {
+    display: none;
     background-color: var(--cor2);
     padding: 10px;
     margin-bottom: 10px;
     text-align: center;
 }
 
-nav > a {
-    margin: 10px;
+nav#itens > a {
     color: var(--cor5);
     font-size: 1em;
     padding: 10px;
     transition: 0.5s;
+    display: block;
     
 }
 
-nav a:hover {
+nav#itens a:hover {
     text-decoration: none;
     color: var(--cor1);
     background-color: var(--cor5);
@@ -90,7 +105,7 @@ main {
     min-width: 300px;
     max-width: 1000px;
     margin-bottom: 30px;
-    
+    margin-top: 30px;
 }
 
 main p {
