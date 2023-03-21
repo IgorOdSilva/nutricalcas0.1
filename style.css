@@ -98,7 +98,7 @@ a {
 }
 
 main {
-    background-color: #FFFAFB;
+    background-color: var(--cor1);
     margin: auto;
     padding: 10px;
     border-radius: 5px 0px;
@@ -157,6 +157,27 @@ article > button:hover {
     cursor: pointer;
     color: var(--cor1);
     background-color: var(--cor5);
+}
+
+section.imagem {
+    background-color: var(--cor1);
+    color: var(--cor5);
+    background-attachment: fixed;
+    background-size: cover;
+    max-width: 1000px;
+    min-width: 300px;
+    min-height: 350px;
+    margin-bottom: 20px;
+}
+
+section#imgPi {
+    background-image: url('imagens/imgPi1.jpg');
+    background-position:  bottom;
+}
+
+section#imgPi2 {
+    background-image: url('imagens/imgPi2.jpg.jpg');
+    background-position: left center;
 }
 
 div.video {
