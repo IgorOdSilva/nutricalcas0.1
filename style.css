@@ -130,6 +130,7 @@ main h2 {
 .click {
     text-align: center;
     padding: 5px;
+    margin-bottom: 20px;
 }
 
 .click h3 {
@@ -178,6 +179,16 @@ section#imgPi {
 section#imgPi2 {
     background-image: url('imagens/imgPi2.jpg.jpg');
     background-position: left center;
+}
+
+section#imgImc {
+    background-image: url('imagens/imgImc.jpg');
+    background-position: center center;
+}
+
+section#imgImc2 {
+    background-image: url('imagens/imgImc2.jpg');
+    background-position: center center;
 }
 
 div.video {
