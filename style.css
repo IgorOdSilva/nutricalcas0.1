@@ -191,6 +191,22 @@ section#imgImc2 {
     background-position: center center;
 }
 
+span#play_video {
+    background-color: var(--cor2);
+    text-align: center;
+    display: block;
+    padding: 10px;
+    margin: 0px -10px 30px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+span#play_video:hover {
+    color: var(--cor1);
+    background-color: var(--cor5);
+}
+
 div.video {
     background-color: #339989;
     margin: 0px -10px 30px;
