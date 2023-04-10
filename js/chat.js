@@ -7,7 +7,7 @@ inputQuestion.addEventListener("keypress", (e) => {
 
 
 
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "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";
 
 result.disabled = true
 
