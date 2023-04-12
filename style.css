@@ -246,6 +246,7 @@ div.video > iframe {
 
 /* VIDEOS */
 
+/* ICONES */
 
 /* CALCULADORAS */
 
@@ -379,23 +380,29 @@ textarea {
     resize: none;
     border: none;
     padding: 8px;
-    background-color: #3c3d46;
-    color: white;
+    background-color: var(--cor4);
+    color: var(--cor1);
     outline: none;
     font-size: 24px;
-    text-align: justify;
+    margin: auto;
 
   }
 
   textarea#inputQuestion  {
     text-align: center;
     font-family: var(--fonte-padrao);
-    margin: 30px;
+    margin: auto;
+    margin-bottom: 30px;
     border-radius: 20px;
+    width: 68vw;
+    height: 5vh;
 }
 
 textarea#inputQuestion:focus {
-    border: 3px solid var(--cor2);
+    border: 2.5px solid var(--cor5);
+    background-color: var(--cor1);
+    transition: 0.5s;
+    color: var(--cor5);
 }
 
 textarea#result {
@@ -403,6 +410,9 @@ textarea#result {
     border-radius: 15px;
     text-align: justify;
     text-indent: 4px;
+    padding: 5px;
+    margin: auto;
+    width: 68vw;
 }
     
 /* RODAPÉ */
