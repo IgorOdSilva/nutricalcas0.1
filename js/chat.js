@@ -19,13 +19,13 @@ function SendQuestion() {
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
-      Authorization: "Bearer " + OPENAI_API_KEY,
+      Authorization: "Bearer " + ${OPENAI_API_KEY},
     },
     body: JSON.stringify({
       model: "text-davinci-003",
       prompt: sQuestion,
       max_tokens: 2048, // tamanho da resposta
-      temperature: 0.5, // criatividade na resposta
+      temperature: 0.9, // criatividade na resposta
     }),
   })
     .then((response) => response.json())
