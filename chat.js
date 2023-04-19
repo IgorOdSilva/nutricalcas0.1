@@ -1,16 +1,15 @@
 const inputQuestion = document.getElementById("inputQuestion");
 const result = document.getElementById("result");
 
-result.disabled = true
-
 inputQuestion.addEventListener("keypress", (e) => {
   if (inputQuestion.value && e.key === "Enter") SendQuestion();
 });
 
-
-const OPENAI_API_KEY  = "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"
-
 result.disabled = true
+
+const OPENAI_API_KEY = "process.env.OPEN_AI_KEY";
+
+console.log(process.env.OPEN_API_KEY);
 
 function SendQuestion() {
   var sQuestion = inputQuestion.value;
@@ -26,7 +25,7 @@ function SendQuestion() {
       model: "text-davinci-003",
       prompt: sQuestion,
       max_tokens: 2048, // tamanho da resposta
-      temperature: 0.9, // criatividade na resposta
+      temperature: 0.5, // criatividade na resposta
     }),
   })
     .then((response) => response.json())
@@ -38,7 +37,7 @@ function SendQuestion() {
       } else if (json.choices?.[0].text) {
         var text = json.choices[0].text || "Sem resposta";
 
-        result.value += "Informações encontradas: " + text;
+        result.value += "Chat GPT: " + text;
       }
 
       result.scrollTop = result.scrollHeight;
@@ -52,10 +51,9 @@ function SendQuestion() {
 
   if (result.value) result.value += "\n\n\n";
 
-  result.value += `Sua pergunta: ${sQuestion}`;
+  result.value += `Eu: ${sQuestion}`;
   inputQuestion.value = "Carregando...";
   inputQuestion.disabled = true;
-  result.disabled = true
 
   result.scrollTop = result.scrollHeight;
 }
