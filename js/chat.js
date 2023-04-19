@@ -1,13 +1,14 @@
 const inputQuestion = document.getElementById("inputQuestion");
 const result = document.getElementById("result");
 
+result.disabled = true
+
 inputQuestion.addEventListener("keypress", (e) => {
   if (inputQuestion.value && e.key === "Enter") SendQuestion();
 });
 
 
-
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY  = "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"
 
 result.disabled = true
 
