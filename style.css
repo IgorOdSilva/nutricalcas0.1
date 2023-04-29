@@ -314,6 +314,12 @@ h3.descvid {
   
 }
 
+section.pi > p {
+    color: var(--cor1);
+    font-size: 1.5em;
+    text-align: center;
+}
+
 /* CALCULADORAS */
 
 
@@ -394,6 +400,20 @@ h3.descvid {
       cursor: pointer;
     
     }
+
+input#masc, input#fem:hover {
+    cursor: pointer;
+}
+
+#masc:hover {
+    cursor: pointer;
+    color: rgba(60, 60, 201, 0.664);
+}
+
+#fem:hover {
+    cursor: pointer;
+    color: pink;
+}
 
 /* RESULTADO E BOTÔES */
 
