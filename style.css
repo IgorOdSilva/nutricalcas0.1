@@ -287,9 +287,6 @@ h3.descvid {
     background-color: #131515;
     border-radius: 0px 5px;
     max-width: 500px;
-    
-    
-    
 }
 
 .pi {
@@ -310,9 +307,26 @@ h3.descvid {
   gap: 10px;
   border-radius: 0px 3px;
   align-content: center;
-  text-align: center;
-  
+  text-align: center;  
 }
+
+.tmb {
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #131515;
+    border-radius: 0px 5px;
+    max-width: 500px;
+    margin-top: 45px;
+}
+
+section.tmb > p {
+    color: var(--cor1);
+    font-size: 1.5em;
+    text-align: center;
+}
+
 
 section.pi > p {
     color: var(--cor1);
@@ -411,6 +425,20 @@ input#masc, input#fem:hover {
 }
 
 #fem:hover {
+    cursor: pointer;
+    color: pink;
+}
+
+input#mascu, input#femi:hover {
+    cursor: pointer;
+}
+
+#mascu:hover {
+    cursor: pointer;
+    color: rgba(60, 60, 201, 0.664);
+}
+
+#femi:hover {
     cursor: pointer;
     color: pink;
 }

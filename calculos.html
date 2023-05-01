@@ -79,6 +79,32 @@
                 <span id="resultadoPI"></span>
                 <script src="js/pi.js"></script>
             </section>
+
+            <section class="tmb">
+
+                <h2 class="container">Taxa Metabólica Basal</h2>
+                <div class="container">
+                    <label for="weight1">Peso:(kg)</label>
+                    <input class="caixa" type="number" id="weight1" />
+                </div>
+                <br>
+                <div class="container">
+                    <label for="idade">Idade:</label>
+                    <input class="caixa" type="number" id="idade" />
+                </div>
+                <p>Sexo:
+                    <input type="radio" name="sex" id="mascu" checked>
+                    <label for="mascu" id="mascu">Masculino</label>
+                    <input type="radio" name="sex" id="femi">
+                    <label for="femi" id="femi">Feminino</label>
+                </p>
+                <br>
+                <div class="container">
+                    <button class="botao" onclick="calcTMB()">Calcular</button>
+                </div>
+                <span id="resultadoTMB"></span>
+                <script src="js/tmb.js"></script>
+            </section>
             
         </main>
     
