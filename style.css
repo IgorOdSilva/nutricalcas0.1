@@ -391,7 +391,7 @@ section.pi > p {
 
 /* RESULTADO E BOTÔES */
 
-#resultado, #resultadoCPorcao, #resultadoIC, #resultado1, #resultadoPI {
+#resultado, #resultadoCPorcao, #resultadoIC, #resultado1, #resultadoPI, #resTMB {
     text-align: center;
     color: #E0FFFF;
     padding-top: 15px;
