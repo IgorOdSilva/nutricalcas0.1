@@ -410,10 +410,17 @@ section.pi > p {
     }
     
     .detalhes :hover {
-      
+      border-radius: 3px;  
+      background-color: var(--cor4);
+      color: var(--cor1);
       cursor: pointer;
-    
+      transition: 1s;
     }
+
+.detalhes > p:hover {
+    color: var(--cor5);
+    background-color: var(--cor3);
+}
 
 input#masc, input#fem:hover {
     cursor: pointer;
