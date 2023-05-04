@@ -44,5 +44,5 @@ function calcTMB() {
         gender = 'Womem'
         var tmb = ((9.082 * pis.value) + 658.5)
     }
-    resTMB.innerHTML = `Seu TMB é: ${tmb}kcal/dia`
+    resTMB.innerHTML = `Sua TMB é: ${tmb}kcal/dia`
 }
