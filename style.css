@@ -18,7 +18,8 @@
 
 body {
     background-color: var(--cor5);
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     font-family: var(--fonte-padrao)
 }
 
@@ -56,26 +57,11 @@ header > a:hover {
     border-radius: 2px;
 }
 
-span#burguer {
-    background-color: var(--cor2);
-    text-align: center;
-    display: block;
-    padding: 10px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-span#burguer:hover {
-    color: var(--cor1);
-    background-color: var(--cor5);
-}
-
 nav#itens {
-    display: none;
     background-color: var(--cor2);
     padding: 10px;
-    margin-bottom: 10px;
     text-align: center;
+    padding-top: 0;
 }
 
 nav#itens > a {
@@ -83,14 +69,17 @@ nav#itens > a {
     font-size: 1em;
     padding: 10px;
     transition: 1s;
-    display: block;
-    
 }
 
 nav#itens a:hover {
     text-decoration: none;
     color: var(--cor1);
     background-color: var(--cor5);
+}
+
+.material-symbols-outlined {
+    justify-content: center;
+    align-items: center;
 }
 
 /* CABEÇALHO E MENU */
@@ -111,7 +100,6 @@ main {
     min-width: 300px;
     max-width: 1000px;
     margin-bottom: 30px;
-    margin-top: 30px;
 }
 
 main p {

@@ -1,0 +1,42 @@
+@media (max-width: 850px) {
+    span#burguer {
+    background-color: var(--cor2);
+    text-align: center;
+    display: block;
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+span#burguer:hover {
+    color: var(--cor1);
+    background-color: var(--cor5);
+}
+
+nav#itens {
+    display: none;
+    background-color: var(--cor2);
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+nav#itens > a {
+    color: var(--cor5);
+    font-size: 1em;
+    padding: 10px;
+    transition: 1s;
+    display: block;
+    
+}
+
+nav#itens a:hover {
+    text-decoration: none;
+    color: var(--cor1);
+    background-color: var(--cor5);
+}
+
+body {
+    font-size: 0.8em;
+}
+}
