@@ -1,0 +1,144 @@
+.cartao-calculadora {
+    display: none;
+}
+
+.cartao-calculadora.aberto {
+    display: block;
+}
+
+.calculadora {
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #131515;
+    border-radius: 0px 5px;
+    max-width: 500px;
+}
+
+.calculadora .aberto {
+    display: block;
+}
+
+.calculadora > p {
+    color: var(--cor1);
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+/* CALCULADORAS */
+
+
+/* TEXTO E CAIXA DE TEXTO CALCULADORA */
+
+.detalhes :hover {
+  
+    cursor: pointer;
+  
+  }
+  
+  .detalhes {
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    text-justify: center;
+    
+  }
+  
+  
+  details {
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+    background-color: #339989;
+    border-radius: 5px;
+    
+  }
+
+  .container {
+  
+    background-color: #7DE2D1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 0px 3px;
+    text-align: center;
+}
+
+  input, button {
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 0px 3px;
+    caret-color: var(--cor4);
+    background-color: #339989;
+    font-family: var(--fonte-destaque);
+    
+}
+
+/* TEXTO E CAIXA DE TEXTO CALCULADORA */
+
+
+/* RESULTADO E BOTÔES */
+
+#resultado, #resultadoCPorcao, #resultadoIC, #resultado1, #resultadoPI, #resTMB {
+    text-align: center;
+    color: #E0FFFF;
+    padding-top: 15px;
+    font-style: bold;
+}
+
+.botao:hover {
+    background-color: #7DE2D1;
+    transition: 1s;
+    cursor: pointer;
+    }
+    
+    .caixa:hover {
+    background-color: #E0FFFF;
+    transition: 1s;
+    }
+    
+    .detalhes :hover {
+      border-radius: 3px;  
+      background-color: var(--cor4);
+      color: var(--cor1);
+      cursor: pointer;
+      transition: 1s;
+    }
+
+.detalhes > p:hover {
+    color: var(--cor5);
+    background-color: var(--cor3);
+}
+
+input#masc, input#fem:hover {
+    cursor: pointer;
+}
+
+#masc:hover {
+    cursor: pointer;
+    color: rgba(60, 60, 201, 0.664);
+}
+
+#fem:hover {
+    cursor: pointer;
+    color: pink;
+}
+
+input#mascu, input#femi:hover {
+    cursor: pointer;
+}
+
+#mascu:hover {
+    cursor: pointer;
+    color: rgba(60, 60, 201, 0.664);
+}
+
+#femi:hover {
+    cursor: pointer;
+    color: pink;
+}

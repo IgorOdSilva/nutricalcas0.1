@@ -1,0 +1,46 @@
+.chat {
+    display: flex;
+    width: 70vw;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+  }
+
+textarea {
+    resize: none;
+    border: none;
+    padding: 8px;
+    background-color: var(--cor4);
+    color: var(--cor1);
+    outline: none;
+    font-size: 24px;
+    margin: auto;
+
+  }
+
+  textarea#inputQuestion  {
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    width: 68vw;
+    height: 5vh;
+}
+
+textarea#inputQuestion:focus {
+    border: 1px solid var(--cor5);
+    background-color: var(--cor1);
+    transition: 0.5s;
+    color: var(--cor5);
+}
+
+textarea#result {
+    font-family: var(--fonte-padrao);
+    border-radius: 15px;
+    text-align: justify;
+    text-indent: 4px;
+    padding: 5px;
+    margin: auto;
+    width: 68vw;
+}

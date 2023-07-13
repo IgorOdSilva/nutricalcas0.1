@@ -39,4 +39,11 @@ nav#itens a:hover {
 body {
     font-size: 0.8em;
 }
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    margin: auto;
+}
 }

@@ -5,24 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cálculos de Ficha Técnica</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/calculadoras.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
 </head>
 <body>
     <header>
-        <h1><a href="index.html">Nutri Calcs</a></h1>
+        <h1><a href="../../index.html">Nutri Calcs</a></h1>
         <p><strong>O site que ajuda você e a sua saúde</strong></p>
     </header>
 
     <span class="material-symbols-outlined" id="burguer" onclick="clickNav()">menu</span>
     <script src="button/menu.js"></script>
     <nav id="itens">
-        <a href="index.html" target="_self">HOME ⌂</a>
-        <a href="calculos.html" target="_self">Cálculos Nutricionais</a>
-        <a href="ficha.html">Cálculos de Ficha Técnica</a>
-        <a href="#">Doenças</a>
-        <a href="#">Produtos</a>
+        <a href="../../index.html" target="_self">HOME <span class="material-symbols-outlined">home</span></a>
+            <a href="../html/calculos.html" target="_self">Cálculos Nutricionais</a>
+            <a href="../html/ficha.html">Cálculos de Ficha Técnica</a>
+            <a href="../html/nutrisearch.html"><span class="material-symbols-outlined">search</span> Nutri Search <span class="material-symbols-outlined">search</span></a>
+            <a href="../html/produtos.html">Produtos</a>
     </nav>
     
 
@@ -53,7 +54,7 @@
                 </div>
             
             <span id="resultado"></span>
-            <script src="calculos.js"></script>
+            <script src="src/js/calculos.js"></script>
         </section>
         <br><br>
             
@@ -79,7 +80,7 @@
                     <button class="botao" onclick="divPerCapita()">Calcular</button>
                 </div>
                 <span id="resultado1"></span>
-                <script src="calculopc.js"></script>
+                <script src="src/js/calculopc.js"></script>
             </section>
             <br><br>
             
@@ -107,7 +108,7 @@
                 </div>
                 <br>
                 <span id="resultadoIC"></span>
-                <script src="calculoIC.js"></script>
+                <script src="src/js/calculoIC.js"></script>
             </section>
             <br><br>
             
@@ -133,7 +134,7 @@
                     <button class="botao" onclick="calcCPorcao()">Calcular</button>
                 </div>
                 <span id="resultadoCPorcao"></span>
-                <script src="calculoCPorcao.js"></script>
+                <script src="src/js/calculoCPorcao.js"></script>
             </section>
     </main>
 
