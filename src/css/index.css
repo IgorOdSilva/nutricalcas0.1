@@ -181,22 +181,22 @@ section.imagem {
 }
 
 section#imgPi {
-    background-image: url('imagens/imgPi1.jpg');
+    background-image: url('../../imagens/imgPi1.jpg');
     background-position:  bottom;
 }
 
 section#imgPi2 {
-    background-image: url('imagens/imgPi2.jpg.jpg');
+    background-image: url('../../imagens/imgPi2.jpg.jpg');
     background-position: left center;
 }
 
 section#imgImc {
-    background-image: url('imagens/imgImc.jpg');
+    background-image: url('../../imagens/imgImc.jpg');
     background-position: center center;
 }
 
 section#imgImc2 {
-    background-image: url('imagens/imgImc2.jpg');
+    background-image: url('../../imagens/imgImc2.jpg');
     background-position: center center;
 }
 
