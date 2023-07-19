@@ -1,4 +1,9 @@
 @media (max-width: 850px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
     span#burguer {
     background-color: var(--cor2);
     text-align: center;
@@ -39,11 +44,18 @@ nav#itens a:hover {
 body {
     font-size: 0.8em;
 }
+
+.listagem {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
 .item {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 500px;
-    margin: auto;
+    justify-content: center;
 }
 }
